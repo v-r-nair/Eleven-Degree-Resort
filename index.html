@@ -309,7 +309,7 @@ function renderStatus(){
   if(s.state==="live"){
     el.className="datastatus ok";
     el.style.display="inline-block";
-    el.textContent="\u25CF Live from sheet \u00b7 "+s.count+" dates \u00b7 "+fmtTime(s.at);
+    el.textContent="Availability updated at "+fmtTime(s.at);
   } else {
     el.style.display="none";
     el.textContent="";
